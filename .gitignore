@@ -1,0 +1,20 @@
+# Dữ liệu ảnh và logs
+Dataset/
+results/
+data/
+
+# Tệp trọng số mô hình PyTorch (rất nặng)
+*.pt
+*.pth
+*.rar
+*.zip
+*.pt
+
+# Môi trường ảo (nếu có)
+venv/
+env/
+
+# Tệp rác của Python và hệ điều hành
+__pycache__/
+*.pyc
+.DS_Store
