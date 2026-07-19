@@ -32,7 +32,7 @@ def train():
     patience_count = 0
     history = {'train_loss': [], 'train_acc': [], 'val_loss': [], 'val_acc': [], 'lr': []}
     
-    for epoch in range(1, cfg.EPOCHS + 1):
+    for epoch in range(1, cfg.EPOCH + 1):
         model.train()
         train_loss, train_correct, total = 0, 0, 0
         
