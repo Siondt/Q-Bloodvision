@@ -25,7 +25,7 @@ def train():
         {'params': model.classifier.parameters(), 'lr': cfg.LR},
     ], weight_decay=cfg.WEIGHT_DECAY)
     
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=cfg.EPOCHS, eta_min=1e-6)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=cfg.EPOCH, eta_min=1e-6)
 
     best_val_acc = 0.0
     best_epoch = 0
@@ -36,7 +36,7 @@ def train():
         model.train()
         train_loss, train_correct, total = 0, 0, 0
         
-        pbar = tqdm(train_loader, desc=f"Epoch {epoch}/{cfg.EPOCHS} [Train]")
+        pbar = tqdm(train_loader, desc=f"Epoch {epoch}/{cfg.EPOCH} [Train]")
         for inputs, targets in pbar:
             inputs, targets = inputs.to(cfg.DEVICE), targets.to(cfg.DEVICE)
             
