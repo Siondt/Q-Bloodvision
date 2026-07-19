@@ -2,7 +2,7 @@ import torch
 from pathlib import Path 
 
 class Config:
-    DATA_ROOT = "/Datasets/Dataset-Crop"
+    DATA_ROOT = "/kaggle/input/datasets/thanhtgfg/b0q-01/Dataset-Crop"
     RESULT_DIR = Path('./results')
 
     IMAGE_SIZE = 128 

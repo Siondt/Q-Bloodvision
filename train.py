@@ -81,7 +81,7 @@ def train():
             print(w)
 
         if val_acc > best_val_acc:
-            best_val_acc = val_accf
+            best_val_acc = val_acc
             best_epoch = epoch
             patience_count = 0
             
