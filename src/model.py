@@ -4,7 +4,7 @@ import pennylane as qml
 import numpy as np
 from pennylane.qnn import TorchLayer
 from torchvision.models import efficientnet_b0, EfficientNet_B0_Weights
-from config import cfg
+from src.config import cfg
 
 # Khởi tạo thiết bị lượng tử
 dev = qml.device('lightning.qubit', wires=cfg.num_Qubits)
