@@ -91,7 +91,7 @@ def train():
                 'val_acc': val_acc,
                 'class_names': class_names
             }
-            torch.save(checkpoint, cfg.RESULTS_DIR / 'best_model.pt')
+            torch.save(checkpoint, cfg.RESULT_DIR / 'best_model.pt')
             print("--> Saved Best Model!")
         else:
             patience_count += 1
