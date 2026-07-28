@@ -13,7 +13,7 @@ class Config:
     num_Qubits = 4
     num_Layers = 6
 
-    EPOCH = 100
+    EPOCH = 30
     BATCH_SIZE = 32
     LR = 3e-4
     LR_CNN = 1e-4
